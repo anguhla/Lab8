@@ -49,9 +49,12 @@ public class CustomListTest {
     @Test
     public void testDelete()  {
         list = MockCityList();
-        list.addCity(getTestCity());
-        list.delete(getTestCity());
+        testCity = getTestCity();
+        list.addCity(testCity);
+        list.delete(testCity);
         assertEquals(0, list.getCount());
     }
+    
+
 
 }
